@@ -3,7 +3,7 @@ Theme Name: Velocity - Responsive Business WordPress Theme
 Theme URI: http://themeforest.net/user/damojo?ref=damojo
 Author: Damojo
 Author URI: http://themeforest.net/user/damojo?ref=damojo
-Version: 1.6.2
+Version: 1.6.4
 License: GNU General Public License version 3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Description: Velocity is a responsive multipurpose wordpress theme with loads of features and layout options.
@@ -28,7 +28,7 @@ Tags: light, white, black, gray, one-column, two-columns, right-sidebar, custom-
 	********************************/
 	
 
-	body { margin: 0; font-family:'Open Sans', sans-serif; font-size: 1.3em; font-weight: 400; line-height: 1.6em; color: #555; background-color: #fff; overflow-x: hidden; }
+	body { margin: 0; font-family:'Open Sans', sans-serif; font-size: 13px; font-weight: 400; line-height: 24px; color: #555; background-color: #fff; overflow-x: hidden; }
 	body.boxed { border-top: 0; }
 	html { overflow-x: hidden;  -webkit-font-smoothing:antialiased; }
 	iframe { border: 0; }
