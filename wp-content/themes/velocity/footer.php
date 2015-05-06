@@ -80,10 +80,10 @@
 		
 			<section class="footer">
 				<div class="row">
-				<article class="span3 widget">
+				<article class="span6 widget">
 					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Widget Slot 1") ) : ?>
 						
-						<div class="widget-1  first span3 widget widget_text">			<div class="textwidget">
+						<div class="widget-1  first span6 widget widget_text">			<div class="textwidget">
 						Footer Widget Slot 1<br><br>
 						Please configure this Widget in the Admin Panel under Appearance -> Widgets -> Footer Widget Slot 1
 </div>
@@ -91,28 +91,30 @@
 					
 					<?php endif; ?>
 				</article>				
+<!--
 				<article class="span3 widget">
-					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Widget Slot 2") ) : ?>
+					<?php //if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Widget Slot 2") ) : ?>
 					
 						<div class="widget-1  first span3 widget widget_text">			<div class="textwidget">
 						Footer Widget Slot 2<br><br>
 						Please configure this Widget in the Admin Panel under Appearance -> Widgets -> Footer Widget Slot 2
 </div>
 								<div class="clear"></div></div>
-					<?php endif; ?>
+					<?php //endif; ?>
 				</article>
 				<article class="span3 widget">
-					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Widget Slot 3") ) : ?>
+					<?php //if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Widget Slot 3") ) : ?>
 						<div class="widget-1  first span3 widget widget_text">			<div class="textwidget">
 						Footer Widget Slot 3<br><br>
 						Please configure this Widget in the Admin Panel under Appearance -> Widgets -> Footer Widget Slot 3
 </div>
 								<div class="clear"></div></div>
-					<?php endif; ?>
+					<?php //endif; ?>
 				</article>
-				<article class="span3 widget">
+-->
+				<article class="span6 widget">
 					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Widget Slot 4") ) : ?>
-						<div class="widget-1  first span3 widget widget_text">			<div class="textwidget">
+						<div class="widget-1  first span6 widget widget_text">			<div class="textwidget">
 						Footer Widget Slot 4<br><br>
 						Please configure this Widget in the Admin Panel under Appearance -> Widgets -> Footer Widget Slot 4
 </div>
