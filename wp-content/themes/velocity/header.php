@@ -419,7 +419,7 @@
 
 				<div class="row pagetitle">
 					<h1 style="<?php echo $velocity_torient;?>"><?php echo $velocity_htitle;?></h1>
-					<div class="breadcrumbwrap"><?php velocity_breadcrumb(); ?></div>
+					<!--<div class="breadcrumbwrap"><?php //velocity_breadcrumb(); ?></div>-->
 				</div>
 			</section>
 		<?php } ?>

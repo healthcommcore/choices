@@ -26,16 +26,85 @@ Tags: light, white, black, gray, one-column, two-columns, right-sidebar, custom-
 	********************************/
 	
 /* Common */
+body {
+	font-size: 1.3em;
+	line-height: 1.7em;
+	color: #323232;
+}
+
+.pagetitle h1 {
+	font-size: 2.5em;
+}
+
+a {
+	color: #68792E !important;
+	font-weight: 600 !important;
+}
+
+ul {
+	margin-top:-20px;
+	margin-left:60px;
+}
+
+li {
+	line-height:1.7em;
+}
+
+h2{
+	font-size: 1.6em;
+	line-height: 1.28em;
+	margin:28px 0 5px;
+	color: #344F71; 
+	opacity: 1.0; 
+	font-weight:700; 
+} 
+
+h2:first-child{margin-top:0;}
+
+.bgwithparallax_overlay {
+	background: #344F71 !important;
+}
+
+/* Main menu */
 .navigation ul li.menu-item a.menu-link {
-	font-size: 1.4em;
+	font-size: 0.8em;
 }
 
 .navigation ul li.menu-item a.menu-link,
-.navigation ul li.menu-item a.menu-link:visited{color:#68792E;}
+.navigation ul li.menu-item a.menu-link:visited{
+	color:#68792E;
+	padding-left: 10px; 
+	padding-right: 10px; 
+}
+
+.mainmenu .navigation ul li.menu-item:hover > ul.sub-menu {display:none;}
+
+/* Submenu */
+.sidebar { font-size: 1.2em; margin-top: 68px; font-weight:400; }
+.sidebar a { color: #68792E !important; font-weight: 400 !important;}
+.sidebar a:hover, .sidebar a:visited:hover { color: #000; }
+.sidebar .submenu-widget li {
+	list-style:none; 
+	line-height:1.3em;
+	padding:15px 20px 15px 25px;
+	border-bottom: #68792E 1px solid;
+}
+.sidebar .submenu-widget li:last-child {
+	border-bottom:none;
+}
+
+.sidebar .submenu-widget ul {width:100%; margin:0 20px 0 0;}
+
+/* Page content */
+.logic-model-example p, 
+.references p {
+	font-size: 80%;
+	line-height: 1.5em;
+}
 
 /* Home */
 .wpb_wrapper .home-tagline h2 {
-	font-size:3.2em !important; 
+	font-size:2.2em !important; 
 	line-height: 1.3em !important;
 }
 
@@ -47,8 +116,9 @@ Tags: light, white, black, gray, one-column, two-columns, right-sidebar, custom-
 	display: table; 
 	margin-left: auto;
 	margin-right: auto;
-	color:#344F71; 
+	color:#344F71 !important; 
 	font-size: 0.8em; 
+	line-height: 1.6em;
 	text-align: center; 
 	border-bottom: #CF433D 2px solid;
 }
@@ -56,13 +126,13 @@ Tags: light, white, black, gray, one-column, two-columns, right-sidebar, custom-
 .home-modules a {
 	color: #68792E;
 	font-weight:600; 
-	font-size: 1.2em;
-	line-height: 1.45em;
+	font-size: 1.3em;
+	line-height: 1.3em;
 }
 
 .home-modules p {
-	font-size: 1.3em;
-	line-height: 1.45em;
+	font-size: 0.8em;
+	line-height: 1.4em;
 	margin-bottom: 10px;
 }
 
@@ -75,12 +145,12 @@ Tags: light, white, black, gray, one-column, two-columns, right-sidebar, custom-
 .footer .widget .footer-logo-text,
 .footer .widget .footer_links a,
 .footer .widget .footer_links {
-	color: #fff;
+	color: #fff !important;
 }
 
 .footer .widget .footer-logo-text,
 .footer .widget .footer_links {
-	font-size:1.4em;
+	font-size:0.9em;
 	line-height:1.6em;
 }
 
@@ -95,6 +165,7 @@ Tags: light, white, black, gray, one-column, two-columns, right-sidebar, custom-
 .footer_links{float:right; text-align:right;margin-right:0; margin-top:20px;}
 .footer_links nav ul, .footer_links nav li{list-style-image:none; list-style:none; margin-bottom:10px;}
 .footer_links nav:after{content:""; display:block; clear:both;}
+.footer_links nav ul{margin-top:0;}
 .footer_links nav li{background:none; padding:0 13px; border-right:#fff 1px solid; height:auto; line-height:1em; float:left;}
 .footer_links nav li:last-child{padding-right:0; border:0;}
 .footer_links nav a { padding:0; display:inline;font-size:1.3em;}
@@ -104,7 +175,7 @@ Tags: light, white, black, gray, one-column, two-columns, right-sidebar, custom-
 .footer_links .legal a{ text-decoration:underline; margin-left:3px;}
 
 
-/* various */
+/* helpers */
 .padding-3 h2 a{
 	padding: 0 3%;
 }
@@ -117,13 +188,20 @@ Tags: light, white, black, gray, one-column, two-columns, right-sidebar, custom-
 	padding: 0 15%;
 }
 		
+.space-before-list {
+	margin-bottom:26px;
+}
+
+.remove-text-container-space {
+	margin-bottom: 10px !important;
+}
 	
 	/******************************
 		-	NORMAL STYLES	-
 	********************************/
 	
 
-	body { margin: 0; font-family:'Open Sans', sans-serif; font-size: 13px; font-weight: 400; line-height: 24px; color: #555; background-color: #fff; overflow-x: hidden; }
+	body { margin: 0; font-family:'Open Sans', sans-serif; font-weight: 400; background-color: #fff; overflow-x: hidden; }
 	body.boxed { border-top: 0; }
 	html { overflow-x: hidden;  -webkit-font-smoothing:antialiased; }
 	iframe { border: 0; }
@@ -136,10 +214,10 @@ Tags: light, white, black, gray, one-column, two-columns, right-sidebar, custom-
 	.light-on-dark	{	color:#fff; font-weight:400;}
 	.dark-on-light	{	color:#555;}
 	
-	h1,h2,h3,h4,h5,h6 { margin: 0; margin-bottom: 30px; margin-top: 0px; font-family: 'Open Sans', sans-serif; font-weight: 300; line-height: 1; color: #111; opacity: 0.99; }
+	h1,h3,h4,h5,h6{margin: 0; margin-top: 0px; color: #111; opacity: 0.99; font-weight: 300; } 
+	h1,h2,h3,h4,h5,h6 { font-family: 'Open Sans', sans-serif; }
 	
 	h1 { font-size: 40px; line-height: 50px; }
-	h2 { font-size: 34px; line-height: 44px; }
 	h3 { font-size: 27px; line-height: 37px; }
 	h4 { font-size: 22px; line-height: 32px; }
 	h5 { font-size: 20px; line-height: 30px; }
@@ -261,7 +339,7 @@ Tags: light, white, black, gray, one-column, two-columns, right-sidebar, custom-
 	
 	.pagetitlewrap { border-bottom: 0; position: relative; width: 100%; left: 0; margin: 0; padding: 0; margin-top: 0px; background: #f5f5f5;}
 	.pagetitle { width: 1170px; margin: 0 auto !important; padding: 0; position: relative;z-index:3; }
-	.pagetitle h1 { float: left; font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 30px; line-height: 30px; margin:0; color: #fff; font-style: normal; text-transform: none; text-align: left; margin-top: 44px; margin-bottom: 45px; padding-left: 0px; white-space:nowrap;}
+	.pagetitle h1 { float: left; font-family: 'Open Sans', sans-serif; font-weight: 300; line-height: 30px; margin:0; color: #fff; font-style: normal; text-transform: none; text-align: left; margin-top: 44px; margin-bottom: 45px; padding-left: 0px; white-space:nowrap;}
 
 	.boxedlayout .pagetitlewrap { position: relative; width: 1230px; left: 50%; margin-left: -615px; }
 	
@@ -421,7 +499,7 @@ Tags: light, white, black, gray, one-column, two-columns, right-sidebar, custom-
 	.navigation ul { z-index: 100; margin: 0; padding: 0; list-style-type: none; margin: 0px; }
 	.navigation ul li.menu-item 			{	float:left; font-weight: 400; border-bottom:none; text-decoration: none; }
 	.navigation ul li.menu-item a.menu-link,
-	.navigation ul li.menu-item a.menu-link:visited	{	float: left; font-weight: 600; /*color:#111; font-size: 13px; */ line-height: 15px; border-bottom:none; text-decoration: none; -webkit-transition: none; -moz-transition: none; -o-transition: none; -ms-transition: none; padding-top: 34px; padding-bottom: 30px; padding-left: 15px; padding-right: 15px; }
+	.navigation ul li.menu-item a.menu-link:visited	{	float: left; font-weight: 600; /*color:#111; font-size: 13px; */ line-height: 15px; border-bottom:none; text-decoration: none; -webkit-transition: none; -moz-transition: none; -o-transition: none; -ms-transition: none; padding-top: 34px; padding-bottom: 30px;}
 	.navigation ul li.menu-item a.menu-link			{   width: auto; }
 	
 	.navigation ul li.menu-item:hover,
@@ -1106,10 +1184,7 @@ Tags: light, white, black, gray, one-column, two-columns, right-sidebar, custom-
 	
 	.pagewrapright { padding-right: 20px; }
 	.pagewrapleft { padding-left: 20px; }
-	.sidebar { font-size: 13px; line-height: 22px; margin-top: 68px; font-weight:400; }
 	.single-portfolio .sidebar { margin-top: 81px; }
-	.sidebar a { color: #13c0df; }
-	.sidebar a:hover, .sidebar a:visited:hover { color: #555; }
 	.sidebar .footertitle { float: left; width: 100%; }
 	.sidebar .footertitle h4, .wpb_widgetised_column .footertitle h4 {  float: left; color: #111; font-size: 18px; line-height: 26px; font-weight: 300; margin-top: -6px; margin-bottom: 19px; }
 	.sidebar .widget, .wpb_widgetised_column .widget { float: left; margin-bottom: 60px; }
@@ -2127,6 +2202,7 @@ Tags: light, white, black, gray, one-column, two-columns, right-sidebar, custom-
 		
 	.wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header { outline: none !important; }
 	*/
+/*
 	.wpb_wrapper h1 { font-size: 40px !important; line-height: 50px !important; margin-top: 0 !important; }
 	.wpb_wrapper h2 { font-size: 34px !important; line-height: 44px !important; margin-top: 0 !important; }
 	.wpb_wrapper h3 { font-size: 27px !important; line-height: 37px !important; margin-top: 0 !important; }
@@ -2136,6 +2212,7 @@ Tags: light, white, black, gray, one-column, two-columns, right-sidebar, custom-
 	
 	h4.wpb_pie_chart_heading { margin-top: 10px !important; margin-bottom: 15px !important; font-size: 18px !important; font-weight: 600 !important; }
 
+	*/
 	 
 	
 	/******************************************
