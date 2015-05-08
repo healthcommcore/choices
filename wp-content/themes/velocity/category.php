@@ -82,7 +82,10 @@
 	if(is_category() || is_archive()){
 		if(is_category()){
 			$catname = single_cat_title("", false);
-			$htitle = $velocity_categoryname." - ".$catname;
+			// DR 5-8-15 modification
+			// Remove 'Category' from blog name and capitalize catname
+			//$htitle = $velocity_categoryname." - ".$catname;
+			$htitle = ucfirst($catname);
 
 			if($velocity_archivelayout=="Full-Width"){
 				$velocity_activate_sidebar="off";
@@ -344,7 +347,10 @@
                             <?php } ?>
                         <?php } ?>
 
-                        <div class="posttext"><?php the_excerpt(); ?></div>
+												<!-- DR modification 5-8-15
+														 Replaced the_excerpt() with the_content() in order to display post images in category list -->
+                        <!--<div class="posttext"><?php //the_excerpt(); ?></div>-->
+                        <div class="posttext"><?php the_content(); ?></div>
 						<div class="readmore"><a href="<?php the_permalink(); ?>" class="btn btn-primary"><?php echo $velocity_readmore ?></a></div>
 
                     </div>

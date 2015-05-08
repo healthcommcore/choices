@@ -354,7 +354,10 @@
 	if(is_category() || is_archive()){
 		if(is_category()){
 			$velocity_catname = single_cat_title("", false);
-			$velocity_htitle = __('Category ', 'velocity')." - ".$velocity_catname;
+			// DR 5-8-15 modification
+			// Remove 'Category' from blog name and capitalize catname
+			//$velocity_htitle = __('Category ', 'velocity')." - ".$velocity_catname;
+			$velocity_htitle = ucfirst($velocity_catname);
 		}
 
 		elseif(is_archive()){
