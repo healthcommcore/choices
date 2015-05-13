@@ -57,8 +57,8 @@ li {
 }
 
 h2{
-	font-size: 1.6em;
-	line-height: 1.28em;
+	font-size: 1.5em;
+	line-height: 1.18em;
 	margin:28px 0 5px;
 	color: #344F71; 
 	opacity: 1.0; 
@@ -74,6 +74,7 @@ h2:first-child{margin-top:0;}
 /* Main menu */
 .navigation ul li.menu-item a.menu-link {
 	font-size: 0.8em;
+	font-weight:700 !important;
 }
 
 .navigation ul li.menu-item a.menu-link,
@@ -107,7 +108,21 @@ h2:first-child{margin-top:0;}
 	line-height: 1.5em;
 }
 
+.wpb_wrapper th,
+.wpb_wrapper td {
+	border: #999 1px solid;
+	padding: 8px 12px;
+	line-height:1.3em;
+}
+
+a.btn-primary {background:#68792E !important;}
+a.btn-primary:hover {background:#38401B !important;}
+
 /* Home */
+.home-modules .wpb_wrapper {
+	padding: 0 7px;
+}
+
 .wpb_wrapper .home-tagline h2 {
 	font-size:2.2em !important; 
 	line-height: 1.3em !important;
@@ -122,7 +137,7 @@ h2:first-child{margin-top:0;}
 	margin-left: auto;
 	margin-right: auto;
 	color:#344F71 !important; 
-	font-size: 0.8em; 
+	font-size: 0.77em; 
 	line-height: 1.6em;
 	text-align: center; 
 	border-bottom: #CF433D 2px solid;
@@ -148,9 +163,13 @@ h2:first-child{margin-top:0;}
 }
 
 .footer .widget .footer-logo-text,
-.footer .widget .footer_links a,
+.footer .widget a,
 .footer .widget .footer_links {
 	color: #fff !important;
+}
+
+.footer .widget a {
+	text-decoration: underline;
 }
 
 .footer .widget .footer-logo-text,
@@ -189,12 +208,6 @@ h2:first-child{margin-top:0;}
 	display: inline-block;
 	margin-bottom: 15px;
 }
-
-/*
-.wsp-posts-list {
-	margin-top: 10px;
-}
-*/
 
 .wsp-pages-list .page_item_has_children .children a{
 	margin-bottom: 0;
@@ -364,7 +377,7 @@ h2:first-child{margin-top:0;}
 	
 	.pagetitlewrap { border-bottom: 0; position: relative; width: 100%; left: 0; margin: 0; padding: 0; margin-top: 0px; background: #f5f5f5;}
 	.pagetitle { width: 1170px; margin: 0 auto !important; padding: 0; position: relative;z-index:3; }
-	.pagetitle h1 { font-family: 'Open Sans', sans-serif; font-weight: 300;  margin:0; color: #fff; font-style: normal; text-transform: none; text-align: left; margin-top: 25px; margin-bottom: 26px; padding-left: 0px;}
+	.pagetitle h1 { font-family: 'Open Sans', sans-serif; font-weight: 300;  margin:0; color: #fff; font-style: normal; text-transform: none; text-align: left; margin-top: 25px; margin-bottom: 26px; margin-left: 30px; padding-left: 0px;}
 
 	.boxedlayout .pagetitlewrap { position: relative; width: 1230px; left: 50%; margin-left: -615px; }
 	
@@ -1750,7 +1763,7 @@ h2:first-child{margin-top:0;}
  	.btn:hover { background: #13C0DF url(img/tiles/light20.png) repeat; color: #fff !important; }
 	.btn-large { font-weight: 700; font-size: 22px; padding-bottom: 10px !important; padding-left: 20px !important; padding-right: 20px !important; padding-top: 10px !important; }
 	
-	.btn-primary { color: #fff !important; text-shadow: none; background: #13C0DF url(img/tiles/transparent.png) repeat; border: 0; }
+	.btn-primary { color: #fff !important; text-shadow: none; border: 0; }
 	.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] { background: #13C0DF url(img/tiles/light20.png) repeat !important; color: #fff !important; }
 	.btn-primary:active, .btn-primary.active { background: #13C0DF !important; }
 	.btn:focus { outline: none; }
