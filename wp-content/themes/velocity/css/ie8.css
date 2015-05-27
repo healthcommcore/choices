@@ -4,6 +4,7 @@
 .mainmenu .before { display: none; visibility: hidden; }
 .fourcol .entry	{	width: 237px;}
 .portfolio { width: 950px; }
+/*
 
 .whitebackground, .footerwrap, .subfooterwrap, .headertopwrap, .boxedlayout .headerwrap { width: 1000px; margin-left: -500px; left: 50%; }
 .footerwrap.wide .footer, .subfooterwrap, .subfooterwrap.wide .subfooter, .headertopwrap.wide .headertop { width: 940px; }
@@ -21,6 +22,7 @@
 .fullwidthlayout .allwrapper {	background: #FFF; width: 100%; padding: 0; margin-left: 0;}
 .allwrapper.boxed { background: #FFF; width: 940px; padding: 0px 30px; margin: auto; }
 .allwrapper.wide {	background: #FFF; width: 100%; padding: 0; margin-left: 0;}
+*/
 
 /* THEMETASTIC CAPTIONS */
 
@@ -43,3 +45,10 @@
 			background-color: #fff;	
 		}
 .tp-bullets { display: none; }
+
+/** HCC additions **/
+.tp-caption.choicestext, .choicestext {
+	background-color: #344F71 !important;
+}
+
+.span6 {width: 540px;}

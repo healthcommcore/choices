@@ -42,6 +42,7 @@
     <meta http-equiv="Content-Type" content="<?php echo get_bloginfo('html_type'); ?>; charset=<?php echo get_bloginfo('charset'); ?>" />
     <title><?php echo wp_title("",true); ?> <?php if(!is_front_page()) { ?> &raquo; <?php } ?> <?php echo get_bloginfo('name'); ?></title>
     <meta name="robots" content="index, follow" />
+<!-- <script src="/wp-content/themes/velocity/js/respond.min.js"></script> -->
     
 
     <!-- Options
@@ -61,6 +62,10 @@
 
 	?>
 	<?php wp_head(); ?>
+<!--[if lte IE 8 ]>
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/velocity/css/ie8.css" />
+  <script src="/wp-content/themes/velocity/js/html5shiv.min.js"></script>
+<![endif]-->
 </head>
 
 <!--
