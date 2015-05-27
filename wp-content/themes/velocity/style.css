@@ -119,6 +119,11 @@ a.btn-primary {background:#68792E !important;}
 a.btn-primary:hover {background:#38401B !important;}
 
 /* Home */
+
+.homeslider .tparrows:before{
+	line-height: 1.2em;
+}
+
 .home-modules .wpb_wrapper {
 	padding: 0 7px;
 }
