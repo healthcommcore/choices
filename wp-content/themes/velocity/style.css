@@ -2990,9 +2990,16 @@ top: 0 !important;
 
 /* REGULAR DESKTOP */
 	  @media only screen and (min-width: 980px) and (max-width: 1199px) {
+			.navigation ul li.menu-item a.menu-link {
+				font-size: 0.7em;
+			}
+			.header .logo {width: 37% !important;}
+			.home-modules{font-size:85%;}
+
 	  	.allwrapper {	width:940px;}
 	  	.allwrapper.boxed { background: #FFF; width: 940px; padding: 0px 30px; margin: auto; }
 	  	.allwrapper.wide {	background: #FFF; width: 100%; padding: 0; margin-left: 0;}
+
 	  	
 	  	.whitebackground, .footerwrap, .subfooterwrap { width: 1000px; margin-left: -500px; left: 50%; }
 		.footerwrap.wide .footer { width: 940px; }
@@ -3040,6 +3047,13 @@ top: 0 !important;
 	
 /* SMALL DESKTOP */
 		@media only screen and (min-width: 768px) and (max-width: 979px) {
+			.header .logo, .mainmenu {margin-left:auto; margin-right:auto; float:none;}
+			.wpb_wrapper .home-tagline h2 {
+				font-size:1.9em !important; 
+				line-height: 1.2em !important;
+			}
+			.home-modules{font-size:80%;}
+
 			.allwrapper {	width:724px;}
 			.allwrapper.boxed { background: #FFF; width: 724px; padding: 0px 30px; margin: auto; }
 			.allwrapper.wide {	background: #FFF; width: 100%; padding: 0; margin-left: 0;}
@@ -3087,7 +3101,22 @@ top: 0 !important;
 /* ALL MOBILE SIZES */
       @media only screen and (min-width: 0px) and (max-width: 767px) {
 			.homepostholder			 {	width:100%;}
-			
+			.pagetitle h1 {margin: 15px 5px; text-align: left; font-size: 2.0em; line-height: 1.0em;}
+			#firstcontentcontainer							{	padding-top:0px; }
+			.sidebar {display:none;}
+			.footer_links, .footer_links nav ul {margin-right:auto; margin-left:auto;}
+			.footer_links{float:none; text-align:center; margin-right:auto; margin-left:auto; margin-top:20px;}
+			.footer_links nav {display:inline-block;}
+			.footer-logo-text {
+				margin-left: 0;
+			}
+			.header .logo {width: 90% !important;}
+			.wpb_wrapper .home-tagline h2 {
+				margin-top: -28px;
+				font-size:1.6em !important; 
+				line-height: 1.2em !important;
+			}
+			#firstcontentcontainer img[class~=alignleft] {float: none !important; display:block !important; margin:10px auto !important;}
     		.homepost .postbody  	{ float: none; padding-left: 20px; }
 			.totheright .postbody	{ padding-left:0; padding-right:20px;}	
 
@@ -3119,7 +3148,7 @@ top: 0 !important;
 			.boxedlayout .pagetitlewrap { width: 100%; left: 0; margin-left: -20px; padding-left: 20px; padding-right: 20px; }
 			.pagetitlewrap.boxed { width: 100%; left: 0; margin-left: -20px; }
 			.pagetitle { width: 100%; }
-			.pagetitle h1 { margin-top: 31px; padding-left: 0; text-align: center; width: 100%; white-space: normal; }
+			.pagetitle h1 {padding-left: 0; width: 100%; white-space: normal; }
 			.pagetitlewrap.boxed .pagetitle h1 { margin-top: 33px; padding-left: 0; text-align: center; width: 100%; }
 			.breadcrumbwrap, .pagetitlewrap.boxed .breadcrumbwrap { margin-right: 0; width: 100%; text-align: center; margin-top: -25px; margin-bottom: 28px; }
 			.boxedspacer { margin: 0 !important; }
@@ -3195,7 +3224,6 @@ top: 0 !important;
 			.blogpost.nodate .postinfo { padding-left: 0px; }
 			.blogpost.singlepost .posttext  { padding-right: 0px; }
 
-			.pagetitle h1 { text-align: center; }
 		
 			.span9.left .pagination { margin: 0; }
 			.span9.right .pagination { margin: 0; }
