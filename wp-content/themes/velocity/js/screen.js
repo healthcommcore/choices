@@ -45,11 +45,25 @@ jQuery(document).ready(function() {
 		window.location = jQuery(this).find("option:selected").val();
 	});
 
+	/**
+	 * HCC addition
+	 * Dave Rothfarb
+	 * 6-4-15
+	 *
+	 * Hide individual people listed in select list menu in mobile view
+	 */
+	var person = /people\/[\s\S]+/;
+	jQuery('#responsive-menu option').each( function() {
+		if( jQuery(this).val().search(person) != -1) {
+		  jQuery(this).hide();
+		}
+	});
+
 	/* Activate Tabs */
 	jQuery('.themetab a').click(function (e) {
 		e.preventDefault();
 		jQuery(this).tab('show');
-	})
+	});
 
 	/* Activate Carousels */
 	jQuery('.carousel').carousel({ interval: 5000 })

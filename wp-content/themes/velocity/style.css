@@ -1922,6 +1922,7 @@ a.btn-primary:hover {background:#38401B !important;}
 	.mobilemenu	select:before { content: '\2630'; }
 	.mobilemenu	option { outline: none; border: 0; overflow: hidden; font: 13px "Open Sans", sans-serif; color: #555; margin: 0; width: 100%; max-width: 100%; display: block; padding-left: 15px; }
 	.mobilemenu .icon-menu { cursor: pointer; position: absolute; font-size: 30px; background: #666; color: #fff; padding: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+  .mobilemenu	option[value *=""] {}
 
 
 	
