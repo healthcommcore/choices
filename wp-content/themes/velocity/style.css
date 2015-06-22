@@ -238,6 +238,19 @@ a.btn-primary:hover {background:#38401B !important;}
 .remove-text-container-space {
 	margin-bottom: 10px !important;
 }
+
+.special {
+	color: #CF433D;
+	font-size: 130%;
+	font-weight: 600;
+}
+
+.summary-intro {
+	font-size: 135%;
+	line-height: 140%;
+	color: #3C6790;
+	font-weight: 200;
+}
 	
 	/******************************
 		-	NORMAL STYLES	-
@@ -2994,7 +3007,7 @@ top: 0 !important;
 			.navigation ul li.menu-item a.menu-link {
 				font-size: 0.7em;
 			}
-			.header .logo {width: 37% !important;}
+			.header .logo {width: 30% !important;}
 			.home-modules{font-size:85%;}
 
 	  	.allwrapper {	width:940px;}
@@ -3103,7 +3116,7 @@ top: 0 !important;
       @media only screen and (min-width: 0px) and (max-width: 767px) {
 			.homepostholder			 {	width:100%;}
 			.pagetitle h1 {margin: 15px 5px; text-align: left; font-size: 2.0em; line-height: 1.0em;}
-			#firstcontentcontainer							{	padding-top:0px; }
+			#firstcontentcontainer							{	padding-top:20px; }
 			.sidebar {display:none;}
 			.footer_links, .footer_links nav ul {margin-right:auto; margin-left:auto;}
 			.footer_links{float:none; text-align:center; margin-right:auto; margin-left:auto; margin-top:20px;}
@@ -3117,6 +3130,12 @@ top: 0 !important;
 				font-size:1.6em !important; 
 				line-height: 1.2em !important;
 			}
+
+			.summary-intro {
+				font-size: 120%;
+				line-height: 125%;
+			}
+
 			#firstcontentcontainer img[class~=alignleft] {float: none !important; display:block !important; margin:10px auto !important;}
     		.homepost .postbody  	{ float: none; padding-left: 20px; }
 			.totheright .postbody	{ padding-left:0; padding-right:20px;}	
